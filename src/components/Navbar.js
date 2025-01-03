@@ -20,7 +20,7 @@ function NavBar() {
                             <Nav.Link href="/about">About</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
-                    <Form inline>
+                    <Form inline >
                         <Row>
                             <Col xs="auto">
                                 <Form.Control
@@ -30,7 +30,7 @@ function NavBar() {
                                 />
                             </Col>
                             <Col xs="auto">
-                                <Button type="submit">Submit</Button>
+                                <Button type="submit" href='/searchNews'>Submit</Button>
                             </Col>
                         </Row>
                     </Form>

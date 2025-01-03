@@ -8,7 +8,7 @@ function CategoryNews({ category, title }) {
 
     const [articles, setArticles] = useState([]);
     const getNews = async () => {
-        getCategoricalNews("in", category).then((data) => {
+        getCategoricalNews("us", category).then((data) => {
             setArticles(data.data.articles);
         }).catch((error) => {
             console.log(error);

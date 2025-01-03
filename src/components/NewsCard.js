@@ -30,7 +30,6 @@ function NewsCard({ urlToImage, title, description, url }) {
                                 {
                                     description ? description.length > 100 ? truncateDescription(description, 100) : description : "No Description"
                                 }
-                                {urlToImage}
                             </Card.Text>
                         </div>
                         <Button variant="primary" href={url} target="_blank">Read More</Button>
