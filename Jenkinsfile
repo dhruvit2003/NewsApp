@@ -15,14 +15,17 @@ pipeline{
 			}
 		}
 
-		stage("test") {
+		stage("run forntend") {
 
 			steps {
-				echo 'testing the application.....'			            
+				echo 'executing yarn.....'			            
+				nodejs('Node - 20.19.0'){
+					sh 'yarn install'
+				}
 			}
     	}
 
-		stage("deploy") {
+		stage("run backend") {
         
 			steps {
 			 	echo 'deploying the application.....'			            
